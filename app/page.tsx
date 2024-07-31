@@ -1,6 +1,7 @@
 import { Header } from "./_componets/Header"
 import { Hero } from "./_componets/Hero"
 import { Spacing } from "./_componets/Spacing"
+import { Status } from "./_componets/Status"
 
 export default function Home() {
     return (
@@ -8,6 +9,8 @@ export default function Home() {
             <Header />
             <Spacing />
             <Hero />
+            <Spacing />
+            <Status />
         </main>
     )
 }
