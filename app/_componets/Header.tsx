@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { Section } from "./Section"
 import { cn } from "@/lib/utils"
+import { GithubIcon } from "./icons/GithubIcon"
+import { buttonVariants } from "@/components/ui/button"
 
 export const Header = () => {
     return (
@@ -11,12 +13,14 @@ export const Header = () => {
                 <ul className="flex gap-4">
                     <Link
                         href={"https//:git.com"}
-                        className="border border-foreground p-2"
-                    >Git</Link>
+                        className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0")}
+                    >
+                        <GithubIcon size={12} className="text-foregroud" />
+                    </Link>
                     <Link
                         href={"#"}
                         className="p-2 border border-foreground rounded"
-                    >LinkDin</Link>
+                    ></Link>
                 </ul>
             </Section>
         </header >
