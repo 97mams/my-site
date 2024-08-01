@@ -13,8 +13,8 @@ export const Hero = () => {
                 <Image
                     src={"/saryko.png"}
                     alt="profil"
-                    width={250}
-                    height={250}
+                    width={200}
+                    height={200}
                     className="h-full w-full"
                 />
                 {/* <img src="https://i.goopics.net/pl41al.png" alt="mamisoa" /> */}
