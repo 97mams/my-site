@@ -1,10 +1,9 @@
-"use client"
-
-import Link from "next/link"
 import { Section } from "./Section"
 import { Card } from "@/components/ui/card"
 import { Code, Home, LucideIcon, ArrowUpRight, Share, StickyNote, Weight } from "lucide-react"
-import Image from "next/image"
+import { ContactCard } from "./ContactCard"
+import { SideFunProject } from "./SideFunProject"
+import { Work } from "./Works"
 
 export const Status = () => {
     return (
@@ -39,18 +38,18 @@ export const Status = () => {
                     </div>
                 </Card>
                 <Card className="flex flex-col flex-1 p-4 w-full gap-2">
-                    <p className="text-lg text-muted-foreground">contact me</p>
+                    <p className="text-lg text-muted-foreground">Contact me</p>
                     <ContactCard
                         image="/saryko.png"
-                        mediumImage=""
+                        mediumImage="/github-logo.png"
                         name="97mams"
-                        description="5"
+                        description="github"
                     />
                     <ContactCard
                         image="/saryko.png"
-                        mediumImage=""
-                        name="97mams"
-                        description="5"
+                        mediumImage="/google-mail.png"
+                        name="anjaniainamamisoa"
+                        description="google email"
                     />
                 </Card>
             </div>
@@ -58,42 +57,7 @@ export const Status = () => {
     )
 }
 
-const ContactCard = (props: {
-    image: string
-    mediumImage: string
-    name: string
-    description: string
-}) => {
-    return (
-        <Card className="p-3 bg-accent/10 flex items-center gap-4 hover:bg-accent/30 transition-colors group">
-            <div className="relative">
-                <Image
-                    src={props.image}
-                    height={40}
-                    width={40}
-                    alt={props.name}
-                    className="rounded-full object-contain"
-                />
-                <Image
-                    src={props.mediumImage}
-                    height={16}
-                    width={16}
-                    alt={props.name}
-                    className="absolute -bottom-2 -right-2 rounded-full"
-                />
-            </div>
-            <div className="mr-auto">
-                <p className="text-lg font-semibold">
-                    {props.name}
-                </p>
-                <p className="text-sm text-muted-forgroud">
-                    {props.description}
-                </p>
-            </div>
-            <ArrowUpRight className="group-hover:translate-x-2 group-hover:-translate-y-2 mr-4" size={16} />
-        </Card>
-    )
-}
+
 
 const SIDE_PROJECT = [
     {
@@ -128,76 +92,18 @@ const SIDE_PROJECT = [
     }
 ]
 
-type sideProjectProps = {
-    Logo: LucideIcon
-    title: string
-    description: string
-    url: string
-}
-
-const SideFunProject = (props: sideProjectProps) => {
-    return (
-        <Link
-            href={props.url}
-            className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
-            <span className="bg-accent text-accent-foreground p-4 rounded">
-                <props.Logo size={16} />
-            </span>
-            <div>
-                <p className="text-lg font-semibold">{props.title}</p>
-                <p className="text-sm font-muted-foregroud">{props.description}</p>
-            </div>
-        </Link>
-    )
-}
-
 const WORKS = [
     {
-        image: "/",
+        image: "/Logo-paositra.jpg",
         title: "Paositra Mg",
         role: "Stagiaire",
         date: "Sep-Déc 2023"
     },
     {
-        image: "/",
+        image: "/logo.png",
         title: "R@ndevTeam",
         role: "Stagiaire",
         date: "Sep-Déc 2022"
     },
 
 ]
-
-type WorkProps = {
-    Image: string
-    title: string
-    role: string
-    date: string
-}
-
-const Work = (props: WorkProps) => {
-    return (
-        <div className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
-            <span className="bg-accent text-accent-foregroud ">
-                <img
-                    src={props.Image}
-                    alt={props.title}
-                    className="w-4 h-4 object-contain"
-                />
-            </span>
-            <div className="mr-auto">
-                <p className="text-lg font-semibold">
-                    {props.title}
-                </p>
-                <p className="text-sm text-muted-forgroud">
-                    {props.role}
-                </p>
-            </div>
-            <div>
-                <p className="text-sm text-end text-muted-foreground">
-                    {props.date}
-                </p>
-            </div>
-        </div>
-    )
-
-}
