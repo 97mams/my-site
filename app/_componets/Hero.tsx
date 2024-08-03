@@ -5,7 +5,7 @@ export const Hero = () => {
     return (
         <Section className="flex max-lg:flex-col items-start">
             <div className="flex-[3] ">
-                <h2 className="text-4xl">Mamisao Ratsimbarison</h2>
+                <h2 className="text-4xl">Mamisoa Ratsimbarison</h2>
                 <h3 className="text-2xl">Software developer</h3>
                 <p>Young, passionate web developer seeking opportunities to learn and grow in the field of web development .</p>
             </div>

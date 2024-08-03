@@ -96,13 +96,13 @@ const WORKS = [
     {
         image: "/Logo-paositra.jpg",
         title: "Paositra Mg",
-        role: "Stagiaire",
+        role: "developer intern",
         date: "Sep-Déc 2023"
     },
     {
         image: "/logo.png",
         title: "R@ndevTeam",
-        role: "Stagiaire",
+        role: "developer intern",
         date: "Sep-Déc 2022"
     },
 

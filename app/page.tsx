@@ -6,6 +6,7 @@ import { Spacing } from "./_componets/Spacing"
 import { Status } from "./_componets/Status"
 import { Skills } from "./_componets/Skills"
 import { Contacts } from "./_componets/Contacts"
+import { Footer } from "./_componets/Footer"
 
 export default function Home() {
     return (
@@ -19,6 +20,8 @@ export default function Home() {
             <Skills />
             <Spacing />
             <Contacts />
+            <Spacing />
+            <Footer />
         </main>
     )
 }
