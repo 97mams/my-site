@@ -44,12 +44,14 @@ export const Status = () => {
                         mediumImage="/github-logo.png"
                         name="97mams"
                         description="github"
+                        url="https://github.com/97mams"
                     />
                     <ContactCard
                         image="/saryko.png"
                         mediumImage="/google-mail.png"
                         name="anjaniainamamisoa"
                         description="google email"
+                        url="mailto:anjaniainamamisoa@gmail.com"
                     />
                 </Card>
             </div>

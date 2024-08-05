@@ -15,6 +15,7 @@ export const Contacts = () => {
                     mediumImage="/github-logo.png"
                     name="97mams"
                     description="github"
+                    url="https://github.com/97mams"
                 />
 
                 <ContactCard
@@ -22,12 +23,14 @@ export const Contacts = () => {
                     mediumImage="/google-mail.png"
                     name="anjaniainamamisoa"
                     description="google email"
+                    url="mailto:anjaniainamamisoa@gmail.com"
                 />
                 <ContactCard
                     image="/saryko.png"
                     mediumImage="/google-mail.png"
                     name="038 16 574 55"
                     description="number phone"
+                    url="#"
                 />
             </div>
         </Section>
