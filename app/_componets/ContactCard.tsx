@@ -2,17 +2,19 @@ import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { ArrowUpRight } from "lucide-react"
 import Link from "next/link"
+import { cn } from "@/lib/utils"
 
 export const ContactCard = (props: {
     image: string
     mediumImage: string
     name: string
-    description: string,
+    description: string
     url: string
 }) => {
     return (
         <Link
             href={props.url}
+            className={"w-full"}
         >
             <Card className="p-3 bg-accent/10 flex items-center gap-4 hover:bg-accent/30 transition-colors group">
                 <div className="relative">
