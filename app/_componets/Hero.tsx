@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Section } from "./Section"
+import { Code } from "./Code"
 
 export const Hero = () => {
     return (
@@ -7,9 +8,7 @@ export const Hero = () => {
             <div className="flex-[3] ">
                 <h2 className="text-4xl">Mamisoa Ratsimbarison</h2>
                 <h3 className="text-2xl">Software developer</h3>
-                <p>- 🌱 I’m currently learning **Next.js**
-                    - 💻 I love coding in **PHP**
-                    - 🎓 Always eager to learn and improve</p>
+                <p>I love coding in <Code>Php</Code>, currently learning <Code>Nextjs</Code>, Always eager to learn and improve.</p>
             </div>
             <div className="flex-[2] ml-auto">
                 <Image
