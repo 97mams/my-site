@@ -19,7 +19,7 @@ export const Skills = () => {
                     <h3 className="mb-2 text-2xl tracking-tight">
                         React
                     </h3>
-                    <p className="text-muted-foreground text-sm">My favorte framework frontend</p>
+                    <p className="text-muted-foreground text-sm">My favorite framework frontend</p>
                 </div>
 
                 <div className="flex flex-col gap-2">
