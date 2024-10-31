@@ -76,8 +76,8 @@ const SIDE_PROJECT = [
     },
     {
         Logo: Code,
-        title: "Authe",
-        description: "a project for loing account and hash password, create with php",
+        title: "Authentification",
+        description: "a project for login account and hash password, create with php",
         url: "https://github.com/97mams/system_authentification"
     },
     {

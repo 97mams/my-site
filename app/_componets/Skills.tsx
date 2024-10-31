@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { ReactIcon } from "./icons/ReactIcon"
 import { SymfonyIcon } from "./icons/SymfonyIcon"
 import { TailwindIcon } from "./icons/TailwindIcon"
+import { Code } from "./Code"
 
 export const Skills = () => {
     return (
@@ -27,7 +28,7 @@ export const Skills = () => {
                         <TailwindIcon size={50} />
                     </div>
                     <h3 className="mb-2 text-2xl tracking-tight">TailwindCss</h3>
-                    <p className="text-muted-foreground text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ducimus porro aliquid, corruptis</p>
+                    <p className="text-muted-foreground text-sm">I can create <u>beautiful</u> application <i>in seconds</i> using <Code>TaliwindCSS</Code> </p>
                 </div>
 
                 <div className="flex flex-col gap-2">
@@ -35,7 +36,7 @@ export const Skills = () => {
                         <SymfonyIcon size={50} />
                     </div>
                     <h3 className="mb-2 text-2xl tracking-tight">Symfony</h3>
-                    <p className="text-muted-foreground text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ducimus porro aliquid, corruptis</p>
+                    <p className="text-muted-foreground text-sm">Lorem ipsum dolor, sit amet consectetur  corruptis</p>
                 </div>
             </div>
         </Section>
