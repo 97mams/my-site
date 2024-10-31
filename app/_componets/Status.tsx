@@ -66,37 +66,37 @@ const SIDE_PROJECT = [
         Logo: Code,
         title: "API_SOCCER",
         description: "This API allows you to manage football teams, create with node and sequelize for database management",
-        url: "https://github.com"
+        url: "https://github.com/97mams/api-soccer"
     },
     {
         Logo: Code,
         title: "Calculator",
         description: "a project to calculate in the terminal, create with php",
-        url: "https://github.com"
+        url: "https://github.com/97mams/calculator.git"
     },
     {
         Logo: Code,
         title: "Authe",
         description: "a project for loing account and hash password, create with php",
-        url: "https://github.com"
+        url: "https://github.com/97mams/system_authentification"
     },
     {
         Logo: Weight,
         title: "Mon Agens",
         description: "project to practice Laravel",
-        url: "https://github.com"
+        url: "https://github.com/97mams/monAgence"
     },
     {
         Logo: Weight,
-        title: "Sakafo",
+        title: "Toro sakafo",
         description: "project to practice symfony 7",
-        url: "https://github.com"
+        url: "https://github.com/97mams/toroSakafo.git"
     },
     {
         Logo: StickyNote,
         title: "mySite",
         description: "my portfolio create with nextjs",
-        url: "https://github.com"
+        url: "https://github.com/97mams/my-site.git"
     }
 ]
 
