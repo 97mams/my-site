@@ -13,7 +13,7 @@ export const Header = () => {
                 <div className="flex-1" />
                 <ul className="flex gap-4">
                     <Link
-                        href={"https//:git.com"}
+                        href={"https://github.com/97mams"}
                         className={cn(buttonVariants({ variant: "outline" }), "size-6 p-0 rounded")}
                     >
                         <GithubIcon size={15} className="text-foregroud" />

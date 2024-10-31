@@ -64,6 +64,12 @@ export const Status = () => {
 const SIDE_PROJECT = [
     {
         Logo: Code,
+        title: "API_SOCCER",
+        description: "This API allows you to manage football teams, create with node and sequelize for database management",
+        url: "https://github.com"
+    },
+    {
+        Logo: Code,
         title: "Calculator",
         description: "a project to calculate in the terminal, create with php",
         url: "https://github.com"
