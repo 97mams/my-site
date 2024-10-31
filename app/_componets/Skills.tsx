@@ -20,7 +20,7 @@ export const Skills = () => {
                     <h3 className="mb-2 text-2xl tracking-tight">
                         React
                     </h3>
-                    <p className="text-muted-foreground text-sm">My favorite framework frontend</p>
+                    <p className="text-muted-foreground text-sm"><Code>React</Code> is my favorite framework frontend</p>
                 </div>
 
                 <div className="flex flex-col gap-2">
@@ -36,7 +36,7 @@ export const Skills = () => {
                         <SymfonyIcon size={50} />
                     </div>
                     <h3 className="mb-2 text-2xl tracking-tight">Symfony</h3>
-                    <p className="text-muted-foreground text-sm">Lorem ipsum dolor, sit amet consectetur  corruptis</p>
+                    <p className="text-muted-foreground text-sm"><Code>symfony</Code> is my best framework, I like creating an application with it</p>
                 </div>
             </div>
         </Section>
