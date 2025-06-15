@@ -40,14 +40,14 @@ export const Status = () => {
                 <Card className="flex flex-col flex-1 p-4 w-full gap-2">
                     <p className="text-lg text-muted-foreground">Contact me</p>
                     <ContactCard
-                        image="/saryko.png"
+                        image="/moi.png"
                         mediumImage="/github-logo.png"
                         name="97mams"
                         description="github"
                         url="https://github.com/97mams"
                     />
                     <ContactCard
-                        image="/saryko.png"
+                        image="/moi.png"
                         mediumImage="/google-mail.png"
                         name="anjaniainamamisoa"
                         description="google email"

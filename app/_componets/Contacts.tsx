@@ -11,7 +11,7 @@ export const Contacts = () => {
             </h2>
             <div className="flex max-md:flex-col gap-4 w-full">
                 <ContactCard
-                    image="/saryko.png"
+                    image="/moi.png"
                     mediumImage="/github-logo.png"
                     name="97mams"
                     description="github"
@@ -19,14 +19,14 @@ export const Contacts = () => {
                 />
 
                 <ContactCard
-                    image="/saryko.png"
+                    image="/moi.png"
                     mediumImage="/google-mail.png"
                     name="Mamisoa"
                     description="google email"
                     url="mailto:anjaniainamamisoa@gmail.com"
                 />
                 <ContactCard
-                    image="/saryko.png"
+                    image="/moi.png"
                     mediumImage="/google-mail.png"
                     name="038 16 574 55"
                     description="number phone"
