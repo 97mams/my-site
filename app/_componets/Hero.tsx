@@ -16,7 +16,7 @@ export const Hero = () => {
                     alt="profil"
                     width={150}
                     height={150}
-                    className="h-full w-full"
+                    className="h-full w-full rounded-full"
                 />
                 {/* <img src="https://i.goopics.net/pl41al.png" alt="mamisoa" /> */}
             </div>
