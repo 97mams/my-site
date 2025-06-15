@@ -12,7 +12,7 @@ export const Hero = () => {
             </div>
             <div className="flex-[2] ml-auto">
                 <Image
-                    src={"/saryko.png"}
+                    src={"/moi.png"}
                     alt="profil"
                     width={150}
                     height={150}
