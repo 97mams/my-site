@@ -16,6 +16,8 @@
 # production
 /build
 
+*.yaml
+
 # misc
 .DS_Store
 *.pem
