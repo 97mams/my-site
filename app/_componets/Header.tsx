@@ -18,19 +18,19 @@ export const Header = () => {
             href={"https://github.com/97mams"}
             className={cn(
               buttonVariants({ variant: "outline" }),
-              "size-6 p-0 rounded"
+              "size-8 p-0 rounded"
             )}
           >
-            <GithubIcon size={15} className="text-foregroud" />
+            <GithubIcon size={20} className="text-foregroud" />
           </Link>
           <Link
             href={"#"}
             className={cn(
               buttonVariants({ variant: "outline" }),
-              "size-6 p-0 rounded"
+              "size-8 p-0 rounded"
             )}
           >
-            <FacebookIcon size={15} className="text-foregroud" />
+            <FacebookIcon size={20} className="text-foregroud" />
           </Link>
         </ul>
       </Section>
