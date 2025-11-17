@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Section } from "./Section"
 import { Code } from "./Code"
+import { Section } from "./Section"
 
 export const Hero = () => {
     return (
@@ -10,7 +10,7 @@ export const Hero = () => {
                 <h3 className="text-2xl">Software developer</h3>
                 <p>I love coding in <Code>Php</Code>, currently learning <Code>Nextjs</Code>, Always eager to learn and improve.</p>
             </div>
-            <div className="flex-[2] ml-auto">
+            <div className="hidden md:block md:flex-[2] ml-auto">
                 <Image
                     src={"/moi.png"}
                     alt="profil"
