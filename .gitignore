@@ -17,6 +17,7 @@
 /build
 
 *.yaml
+.env
 
 # misc
 .DS_Store
