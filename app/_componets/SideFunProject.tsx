@@ -6,7 +6,6 @@ import { use } from "react";
 
 export const SideFunProject = (data: { data: Promise<any> }) => {
   const res = use(data.data);
-  console.log(res);
   return (
     <div className="w-full flex flex-col gap-2">
       {res.map((project: any, index: number) => (

@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { getData } from "@/serve/data";
+import { Suspense } from "react";
 import { ContactCard } from "./ContactCard";
+import { Loader } from "./loader";
 import { Section } from "./Section";
 import { SideFunProject } from "./SideFunProject";
 import { Work } from "./Works";
@@ -12,7 +14,9 @@ export const Status = () => {
       <div className="flex-[3] w-full">
         <Card className="p-4 flex flex-col gap-2 ">
           <p className="text-lg text-muted-foreground">Side, fun projects</p>
-          <SideFunProject data={data} />
+          <Suspense fallback={<Loader />}>
+            <SideFunProject data={data} />
+          </Suspense>
         </Card>
       </div>
       <div className="flex-[2] flex flex-col w-full gap-2">
