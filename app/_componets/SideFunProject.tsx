@@ -1,48 +1,31 @@
-"use server";
+"use client";
 
-import { LucideIcon } from "lucide-react";
+import { Code } from "lucide-react";
 import Link from "next/link";
+import { use } from "react";
 
-type sideProjectProps = {
-  Logo: LucideIcon;
-  title: string;
-  description: string;
-  url: string;
-};
-
-const token = process.env.GIT_TOKEN;
-const url = "https://api.github.com/user/repos?per_page=10&sort=updated";
-
-const fetcher = async () => {
-  const res = await fetch(url, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: "application/vnd.github.v3+json",
-    },
-  });
-
-  if (!res.ok) {
-    throw new Error("failed to fetch url");
-  }
-
-  return res.json();
-};
-
-console.log("fetch:", fetcher());
-
-export const SideFunProject = (props: sideProjectProps) => {
+export const SideFunProject = (data: { data: Promise<any> }) => {
+  const res = use(data.data);
+  console.log(res);
   return (
-    <Link
-      href={props.url}
-      className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
-    >
-      <span className="bg-accent text-accent-foreground p-4 rounded">
-        <props.Logo size={16} />
-      </span>
-      <div>
-        <p className="text-lg font-semibold">{props.title}</p>
-        <p className="text-sm font-muted-foregroud">{props.description}</p>
-      </div>
-    </Link>
+    <div className="w-full flex flex-col gap-2">
+      {res.map((project: any, index: number) => (
+        <Link
+          key={index}
+          href={"project.owner.url"}
+          className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
+        >
+          <span className="bg-accent text-accent-foreground p-4 rounded">
+            <Code size={16} />
+          </span>
+          <div className="w-full">
+            <p className="text-lg font-semibold">{project.name}</p>
+            <p className="text-sm font-muted-foregroud">
+              {project.description}
+            </p>{" "}
+          </div>
+        </Link>
+      ))}
+    </div>
   );
 };
