@@ -15,9 +15,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="h-full">
-      <header>
-        <link rel="icon" href="/saryko.png" sizes="any" />
-      </header>
       <body
         className={cn(
           GeistSans.variable,
