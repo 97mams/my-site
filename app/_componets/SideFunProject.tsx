@@ -12,8 +12,9 @@ export const SideFunProject = (data: { data: Promise<any> }) => {
       {res.map((project: any, index: number) => (
         <Link
           key={index}
-          href={"project.owner.url"}
+          href={project.html_url}
           className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
+          target="_blank"
         >
           <span className="bg-accent text-accent-foreground p-4 rounded">
             <Code size={16} />
