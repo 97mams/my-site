@@ -1,25 +1,31 @@
-import { LucideIcon } from "lucide-react"
-import Link from "next/link"
+"use client";
 
-type sideProjectProps = {
-    Logo: LucideIcon
-    title: string
-    description: string
-    url: string
-}
+import { Code } from "lucide-react";
+import Link from "next/link";
+import { use } from "react";
 
-export const SideFunProject = (props: sideProjectProps) => {
-    return (
+export const SideFunProject = (data: { data: Promise<any> }) => {
+  const res = use(data.data);
+  console.log(res);
+  return (
+    <div className="w-full flex flex-col gap-2">
+      {res.map((project: any, index: number) => (
         <Link
-            href={props.url}
-            className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
-            <span className="bg-accent text-accent-foreground p-4 rounded">
-                <props.Logo size={16} />
-            </span>
-            <div>
-                <p className="text-lg font-semibold">{props.title}</p>
-                <p className="text-sm font-muted-foregroud">{props.description}</p>
-            </div>
+          key={index}
+          href={"project.owner.url"}
+          className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded"
+        >
+          <span className="bg-accent text-accent-foreground p-4 rounded">
+            <Code size={16} />
+          </span>
+          <div className="w-full">
+            <p className="text-lg font-semibold">{project.name}</p>
+            <p className="text-sm font-muted-foregroud">
+              {project.description}
+            </p>{" "}
+          </div>
         </Link>
-    )
-}
+      ))}
+    </div>
+  );
+};
