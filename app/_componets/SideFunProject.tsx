@@ -1,3 +1,5 @@
+"use server";
+
 import { LucideIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -15,7 +17,7 @@ const fetcher = async () => {
   const res = await fetch(url, {
     headers: {
       Authorization: `Bearer ${token}`,
-      Accepte: "application/vnd.github.v3+json",
+      Accept: "application/vnd.github.v3+json",
     },
   });
 
