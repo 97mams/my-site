@@ -1,4 +1,4 @@
-const token = process.env.NEXT_PUBLICGIT_TOKEN;
+const token = process.env.NEXT_PUBLIC_GIT_TOKEN;
 const url = "https://api.github.com/user/repos?per_page=9&sort=updated";
 
 export const getData = async () => {
